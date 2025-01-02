@@ -1,28 +1,86 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Ma'ar dimah</h1>
-    </header>
-    <main>
-        <section id="welcome-section">
-            <h2>Welcome to my portfolio</h2>
-            <p>This is a paragraph about me and my work.</p>
-        </section>
-        <section id="portfolio-section">
-            <h2>My Portfolio</h2>
-            <ul>
-                <li><a href="project1.html">Project 1</a></li>
-                <li><a href="project2.html">Project 2</a></li>
-                <li><a href="project3.html">Project 3</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>Copyright © 2023 Ma'ar dimah</p>
-    </footer>
-</body>
-</html>
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Section d'accueil */
+#welcome-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #e8e8e8;
+}
+
+#welcome-section h2 {
+    color: #444;
+}
+
+#welcome-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Section portfolio */
+#portfolio-section {
+    padding: 20px;
+}
+
+#portfolio-section h2 {
+    color: #444;
+    text-align: center;
+}
+
+#portfolio-section ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#portfolio-section li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio-section a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+#portfolio-section a:hover {
+    text-decoration: underline;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
