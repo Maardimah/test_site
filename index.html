@@ -1,29 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-     <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complexe scolaire Yarda de Massaguet</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Ma'ar dimah</h1>
+        <div class="container">
+            <h1>Complexe scolaire Yarda de Massaguet</h1>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#informations">Informations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section id="welcome-section">
-            <h2>Welcome to my portfolio Maar dimah</h2>
-            <p>This is a paragraph about me and my work.</p>
+        <section id="accueil" class="hero">
+            <h2>Bienvenue au Complexe scolaire Yarda de Massaguet</h2>
+            <p>Un environnement d'excellence pour l'éducation de vos enfants.</p>
+            <button onclick="enSavoirPlus()">En savoir plus</button>
         </section>
-        <section id="portfolio-section">
-            <h2>My Portfolio</h2>
+
+        <section id="informations" class="info-section">
+            <h2>À propos de nous</h2>
+            <p>Le Complexe scolaire Yarda de Massaguet est dédié à offrir une éducation de qualité et à promouvoir le développement intellectuel et moral des élèves.</p>
             <ul>
-                <li><a href="project1.html">Project 1</a></li>
-                <li><a href="project2.html">Project 2</a></li>
-                <li><a href="project3.html">Project 3</a></li>
+                <li>Programmes éducatifs modernes</li>
+                <li>Enseignants qualifiés</li>
+                <li>Activités parascolaires enrichissantes</li>
             </ul>
         </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contactez-nous</h2>
+            <form id="contact-form">
+                <label for="name">Nom :</label> <br>
+                <input type="text" id="name" name="name" required>
+
+                <br><label for="email">Email :</label><br>
+                <input type="email" id="email" name="email" required>
+
+                <br><label for="message">Message :</label><br>
+                <textarea id="message" name="message" required></textarea>
+
+                <br><button type="submit">Envoyer</button>
+            </form>
+        </section>
     </main>
+
     <footer>
-        <p>Copyright © 2023 Ma'ar dimah</p>
+        <p>&copy; 2025 Complexe scolaire Yarda de Massaguet. Tous droits réservés.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
